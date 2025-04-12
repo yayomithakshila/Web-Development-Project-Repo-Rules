@@ -1,0 +1,13 @@
+def generate_fibonacci(limit):
+    sequence = []
+    a, b = 0, 1
+    while a <= limit:
+        sequence.append(a)
+        a, b = b, a + b
+    return sequence
+
+limit = 100
+fib_sequence = generate_fibonacci(limit)
+
+print(f"Fibonacci sequence up to {limit}:")
+print(fib_sequence)
