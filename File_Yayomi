@@ -1,0 +1,12 @@
+name: Label & comment issues
+
+on:
+  issues:
+    types: [opened, reopened, closed]
+  pull_request:
+    types: [opened]
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
